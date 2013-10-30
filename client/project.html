@@ -1,0 +1,21 @@
+<template name="project">
+  <div class='alert alert-info'>
+    <strong>Please note</strong>: Most of these projects are hosted on free severs that hibernate after prolonged inactivity. Some things can take 30 to load the first time, but the next load should be normal.
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>
+        {{name}}
+        <small><a href="{{website}}">{{website}}</a></small>
+      </h1>
+      <p>{{description}}
+      <p>
+        <div class="btn-group btn-group-lg">
+          <a class="btn btn-primary" href="{{website}}">Go to {{name}}!</a>
+          <a class="btn btn-info" href="{{website}}">View source</a>
+        </div>
+      </p>
+    </div>
+  </div>
+</template>
