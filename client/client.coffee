@@ -4,6 +4,7 @@ projects =
     website: 'http://chats.lezed1.tk'
     description: 'A chat server powered by Socket.io and AngularJS'
     source: 'https://github.com/lezed1/chats'
+    images: ['/Chats-desktop.png', '/Chats-mobile.png']
   Homepage:
     website: 'http://zanderbolgar.tk'
     description: 'My personal homepage, which is this site'
@@ -12,6 +13,7 @@ projects =
     website: 'http://liveq.lezed1.tk'
     description: 'A simple real-time question and answer platform powered by Meteor.js'
     source: 'https://bitbucket.org/lezed1/liveq/overview'
+    images: ['/LiveQ-desktop.png', '/LiveQ-mobile.png']
 
 _.each projects, (value, key) ->
   value.name = key

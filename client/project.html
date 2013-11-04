@@ -13,9 +13,17 @@
       <p>
         <div class="btn-group btn-group-lg">
           <a class="btn btn-primary" href="{{website}}">Go to {{name}}!</a>
-          <a class="btn btn-info" href="{{website}}">View source</a>
+          <a class="btn btn-info" href="{{source}}">View source</a>
         </div>
       </p>
+      {{#if images}}
+        <p>Screenshots</p>
+      {{/if}}
+      {{#each images}}
+        <a href="{{this}}" target="_blank">
+          <img class="img-thumbnail img-responsive" src="{{this}}"/>
+        </a>
+      {{/each}}
     </div>
   </div>
 </template>
