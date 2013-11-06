@@ -25,11 +25,11 @@ Template.project.name = -> console.log Router.current().params.project
 # Routes
 Router.configure
   layoutTemplate: "layout"
+  notFoundTemplate: "404"
 
 Router.map ->
   @route "home",
     path: "/"
-  @route "projects"
   @route "project",
     path: "/:project"
     data: ->
