@@ -15,7 +15,7 @@
         </div>
         <ul class="list-group">
           {{#each projects}}
-            <li class="list-group-item"><a href="/{{name}}">{{name}}</a></li>
+            <li class="list-group-item"><a href="/project/{{name}}">{{name}}</a></li>
           {{/each}}
         </ul>
       </div>
@@ -27,8 +27,9 @@
           <h3>Hobbies</h3>
         </div>
         <ul class="list-group">
-          <li class="list-group-item">test</li>
-          <li class="list-group-item">test</li>
+          {{#each hobbies}}
+            <li class="list-group-item"><a href="/hobby/{{name}}">{{name}}</a></li>
+          {{/each}}
         </ul>
       </div>
     </div>
