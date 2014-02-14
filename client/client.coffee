@@ -2,17 +2,33 @@
 projects =
   Chats:
     website: "http://chats.lezed1.tk"
-    description: "A chat server powered by Socket.io and AngularJS"
+    description: 
+      text: "A proof-of-concept chat server to practice real-time communication between a browser and server while using an MVC framework. "
+      bullets: [
+          "Powered by Node.js, Socket.io and AngularJS",
+          "Responsive design to work well on all screen sizes. (See the mobile and desktop screenshots)"
+      ]
     source: "https://github.com/lezed1/chats"
     images: ["/Chats-desktop.png", "/Chats-mobile.png"]
   Homepage:
     website: "http://zanderbolgar.tk"
-    description: "My personal homepage, which is this site. How meta."
+    description: 
+      text: "My personal homepage, which is this site... How meta.. I thought that a website would be able to showcase my work than a resume could."
+      bullets: [
+          "Single page webapp with working back button",
+          "Powered by Meteor.js and IronRouter after removal unnecessary packages"
+      ]
     source: "https://github.com/lezed1/homepage"
     images: ["/Homepage-desktop.png", "/Homepage-mobile.png"]
   LiveQ:
     website: "http://liveq.lezed1.tk"
-    description: "A simple real-time question and answer platform powered by Meteor.js"
+    description: 
+      text: "A simple real-time question and answer platform targeted primarily for classroom use. After creating an account, users can ask questions and answer other questions. LiveQ was designed so that all answers are private to the asker and answerer. An example of a simple use case would be a teacher checking for basic understanding at the end of a lesson. A teacher could ask, \"What are the non-price variables of supply\" and the student would respond with their personal answer. The teacher would then be able to quickly check each student's answer, and identify what should be reviewed next lesson."
+      bullets: [
+          "Powered by Meteor.js and IronRouter",
+          "Used in classroom",
+          "Handled load of 25+ users on low-spec virtual machine"
+      ]
     source: "https://bitbucket.org/lezed1/liveq/overview"
     images: ["/LiveQ-desktop.png", "/LiveQ-mobile.png"]
 

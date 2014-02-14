@@ -14,3 +14,7 @@ ejson
 bootstrap-3
 coffeescript
 iron-router
+
+# Debugging
+reload
+autoupdate

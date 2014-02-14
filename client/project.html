@@ -1,6 +1,6 @@
 <template name="project">
   <div class='alert alert-info'>
-    <strong>Please note</strong>: Most of these projects are hosted on free severs that hibernate after prolonged inactivity. Some things can take 30 to load the first time, but the next load should be normal.
+    <strong>Please note</strong>: Most of these projects are hosted on free severs that hibernate after prolonged inactivity. Some websites can take 30 seconds to load the first time, but the next load should be normal speed.
   </div>
 
   <div class="jumbotron">
@@ -9,7 +9,18 @@
         {{name}}
         <small><a href="{{website}}">{{website}}</a></small>
       </h1>
-      <p>{{description}}
+      
+      {{#if description.text}}
+        <p>{{description.text}}</p>
+      {{/if}}
+
+      {{#if description.bullets}}
+        <ul>
+          {{#each description.bullets}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      {{/if}}
       <p>
         <div class="btn-group btn-group-lg">
           <a class="btn btn-primary" href="{{website}}">Go to {{name}}!</a>
